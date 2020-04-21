@@ -19,7 +19,7 @@
         "channel": {
             "title": "Channel",
             "type": "string",
-            "description": "Channel where the message will be sent. (optional)",
+            "description": "Channel where the message will be sent (ie "#general")",
             "example": "#general",
             "editor": "textfield"
         }
