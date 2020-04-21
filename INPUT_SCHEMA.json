@@ -13,14 +13,16 @@
             "title": "Message",
             "type": "string",
             "description": "Message that will be sent to Slack",
-            "placeholder": "Hello from Apify actor!",
+            "prefill": "Hello from Apify actor!",
+            "example": "Hello from Apify actor!",
             "editor": "textfield"
         },
         "channel": {
             "title": "Channel",
             "type": "string",
             "description": "Channel where the message will be sent (ie #general)",
-            "placeholder": "#general",
+            "prefill": "#general",
+            "example": "#general",
             "editor": "textfield"
         }
     },
