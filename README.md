@@ -8,9 +8,9 @@ The following table shows specification of the actor INPUT fields as defined by 
 
 Field |	Type	| Description
 ---| ---| ---|
-token|	*String*|	(required) Slack token
-channel|	*String*|	(required) Message that will be sent to Slack (i.e.  "Hello from Apify actor!" ).
-dropboxToken|	*String*|	(optional) Channel where the message will be sent (i.e. "#general" ).
+Token|	*String*|	(required) Slack token
+Message|	*String*|	(required) Message that will be sent to Slack (i.e.  "Hello from Apify actor!" ).
+Channel|	*String*|	(required) Channel where the message will be sent (i.e. "#general" ).
 
 ## How to run
 
@@ -24,6 +24,6 @@ https://api.apify.com/v2/acts/katerinahronik~slack-message/runs?token=<YOUR_API_
 
 ## CU usage 
 
-Approximately 0.001 CU per run including upload to dropbox and sending e-mail.
+Approximately 0.001 CU per run.
 
 
