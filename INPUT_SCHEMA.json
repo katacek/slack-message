@@ -1,0 +1,28 @@
+{
+    "title": "Input schema for slack-message actor.",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "token": {
+            "title": "Token",
+            "type": "string",
+            "description": "Slack token",
+            "editor": "textfield"
+        },
+        "text": {
+            "title": "Message",
+            "type": "string",
+            "description": "Message that will be sent to Slack",
+            "example": "Hello from Apify actor!",
+            "editor": "textfield"
+        },
+        "channel": {
+            "title": "Channel",
+            "type": "string",
+            "description": "Channel where the message will be sent. (optional)",
+            "example": "#general",
+            "editor": "textfield"
+        }
+    },
+    "required": ["token", "text"]
+}
