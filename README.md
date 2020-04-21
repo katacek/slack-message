@@ -1,6 +1,6 @@
 # Slack message
 
-This actor sends a message to Slack automatically.
+This actor sends message to Slack automatically.
 
 ## Input 
 
