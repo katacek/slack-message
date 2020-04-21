@@ -22,5 +22,8 @@ To run the actor from your code, send a HTTP POST request to the following API e
 
 https://api.apify.com/v2/acts/katerinahronik~slack-message/runs?token=<YOUR_API_TOKEN>
 
+## CU usage 
+
+Approximately 0.001 CU per run including upload to dropbox and sending e-mail.
 
 
