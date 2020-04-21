@@ -15,7 +15,7 @@ Channel|	*String*|	(required) Channel where the message will be sent (i.e. "#gen
 ## How to run
 
 To run the actor, you'll need an [Apify account](https://my.apify.com/). Simply create a new task for the actor by clicking the green button above, modify the actor input configuration, click Run and get your results. 
-To get the **Slack token**, please follow instructions on [Slack help center](https://slack.com/intl/en-cz/help/articles/215770388-Create-and-regenerate-API-tokens)).
+To get the **Slack token**, please follow the instructions on [Slack help center](https://slack.com/intl/en-cz/help/articles/215770388-Create-and-regenerate-API-tokens)).
 
 ## API
 
