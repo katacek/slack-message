@@ -25,7 +25,7 @@
             "example": "#general",
             "editor": "textfield"
         },
-        "threadTs": {
+        "threadId": {
             "title": "Thread ID",
             "type": "string",
             "description": "The ID of another un-threaded message to reply to. You can find this information under the 'ts' key in the actor output.",

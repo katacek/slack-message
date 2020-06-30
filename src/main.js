@@ -4,7 +4,7 @@ const { WebClient } = require('@slack/web-api');
 const { utils: { log } } = Apify;
 
 Apify.main(async () => {
-    const { token, channel, text, blocks, treadTs } = await Apify.getValue('INPUT');
+    const { token, channel, text, blocks, threadId } = await Apify.getValue('INPUT');
 
     const web = new WebClient(token);
 
@@ -12,7 +12,7 @@ Apify.main(async () => {
         text,
         channel,
         blocks,
-        thread_ts: treadTs,
+        thread_ts: threadId,
     });
 
 
