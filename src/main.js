@@ -1,20 +1,22 @@
 const Apify = require('apify');
-const Slack = require('slack-node');
-const request = require('request-promise');
+const { WebClient } = require('@slack/web-api');
+
+const { utils: { log } } = Apify;
 
 Apify.main(async () => {
-    
-    const input = await Apify.getValue('INPUT');
-    
-    const bot = new Slack(input.token);
-    
-    const response = await new Promise((resolve, reject) => {
-        bot.api('chat.postMessage', input, function(err, response){
-            if(err){reject(err);}
-            else{resolve(response);}
-        });
-    });
-    
-    await Apify.setValue('OUTPUT', response);
+    const { token, channel, text, blocks, treadTs } = await Apify.getValue('INPUT');
 
+    const web = new WebClient(token);
+
+    const result = await web.chat.postMessage({
+        text,
+        channel,
+        blocks,
+        thread_ts: treadTs,
+    });
+
+
+    log.info(`Successfully send message ${result.ts} in conversation ${channel}`);
+
+    await Apify.setValue('OUTPUT', result);
 });

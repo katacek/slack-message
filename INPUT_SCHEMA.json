@@ -24,6 +24,19 @@
             "prefill": "#general",
             "example": "#general",
             "editor": "textfield"
+        },
+        "threadTs": {
+            "title": "Thread ID",
+            "type": "string",
+            "description": "The ID of another un-threaded message to reply to. You can find this information under the 'ts' key in the actor output.",
+            "example": "1342156650.000200",
+            "editor": "textfield"
+        },
+        "blocks": {
+            "title": "Blocks",
+            "type": "array",
+            "description": "An array of layout blocks. For more info see the slack blocks documentation.",
+            "editor": "json"
         }
     },
     "required": ["token", "text", "channel"]
