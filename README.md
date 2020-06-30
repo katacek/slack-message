@@ -11,6 +11,10 @@ Field |	Type	| Description
 Token|	*String*|	(required) Slack token
 Message|	*String*|	(required) Message that will be sent to Slack (i.e.  "Hello from Apify actor!" ).
 Channel|	*String*|	(required) Channel where the message will be sent (i.e. "#general" ).
+Thread ID|	*String*|	The ID of another un-threaded message to reply to. You can find this information under the `ts` key in the actor output.
+Blocks|	*Array*|	An array of layout blocks. For more info see the [Slack blocks documentation](https://api.slack.com/reference/block-kit/blocks).
+
+
 
 ## How to run
 
