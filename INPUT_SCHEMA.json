@@ -6,8 +6,9 @@
         "token": {
             "title": "Token",
             "type": "string",
-            "description": "Slack token",
-            "editor": "textfield"
+            "description": "Slack token in a format xoxp-xxxxxxxxx-xxxx",
+            "editor": "textfield",
+            "prefill": "xoxp-xxxxxxxxx-xxxx"
         },
         "text": {
             "title": "Message",
