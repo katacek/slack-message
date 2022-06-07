@@ -9,7 +9,7 @@
             "description": "Slack token in a format xoxp-xxxxxxxxx-xxxx",
             "editor": "textfield",
             "prefill": "xoxp-xxxxxxxxx-xxxx",
-            "pattern":"/xox.*/"
+            "pattern":"xox.*"
         },
         "text": {
             "title": "Message",
