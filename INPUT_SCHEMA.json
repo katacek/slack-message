@@ -8,7 +8,8 @@
             "type": "string",
             "description": "Slack token in a format xoxp-xxxxxxxxx-xxxx",
             "editor": "textfield",
-            "prefill": "xoxp-xxxxxxxxx-xxxx"
+            "prefill": "xoxp-xxxxxxxxx-xxxx",
+            "pattern":"/xox.*/"
         },
         "text": {
             "title": "Message",
