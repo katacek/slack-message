@@ -1,6 +1,5 @@
 import { WebClient } from '@slack/web-api';
-import { Actor } from 'apify';
-import { log } from 'crawlee';
+import { Actor, log } from 'apify';
 
 // Initialize the Apify SDK
 await Actor.init();
